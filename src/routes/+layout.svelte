@@ -84,16 +84,16 @@
 	</div>
 	
 	<div class='flex justify-center'>
-		<nav class='not-md:hidden flex gap-4'>
+		<!-- <nav class='hidden flex gap-4'>
 			{#each links as {text, href}}
 				<a {href} class='btn btn-ghost btn-lg px-4 py-1 hover:text-primary whitespace-nowrap'>{text}</a>
 			{/each}
-		</nav>
+		</nav> -->
 	</div>
 
-	
 	<div class='mx-auto'>
-		<button class='md:hidden btn btn-ghost btn-lg hover:text-primary' onclick={toggleShow}>
+		<a href='/' class='btn btn-ghost btn-lg px-4 py-1 hover:text-primary whitespace-nowrap'>Give</a>
+		<button class='hidden btn btn-ghost btn-lg hover:text-primary' onclick={toggleShow}>
 			Menu <Icon src={Bars3} class='size-6 lg:size-8 ml-1'/>
 		</button>
 	</div>
