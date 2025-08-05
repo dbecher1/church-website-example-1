@@ -4,6 +4,8 @@
 	import Logo from '$lib/assets/logo.svelte';
 	import { Icon, Bars3, XMark } from 'svelte-hero-icons';
 	import { fade, slide } from 'svelte/transition';
+	import Facebook from '$lib/facebook.svelte';
+	import Instagram from '$lib/instagram.svelte';
 
 	let { children } = $props();
 
@@ -34,9 +36,9 @@
 			{text: 'Sponsor a Child', href: ''},
 		]},
 		{title: 'Contact Us', links: [
-			{text: '1990 Hill Ave, Columbus, OH, 12345', href: ''},
-			{text: 'church@the.hill', href: 'mailto:church@the.hill'},
-			{text: '555-123-4567'}
+			{text: '', href: ''},
+			{text: '', href: 'mailto:church@the.hill'},
+			{text: ''}
 		]}
 	]
 </script>
@@ -103,24 +105,40 @@
 {/snippet}
 
 {#snippet footer()}
-	<div class='footer sm:footer-horizontal py-10 px-14'>
-		{#each footer_links as {title, links}}
-			<nav>
-				<h4 class='footer-title'>{title}</h4>
-				{#each links as {text, href}}
-					{#if href}
-						<a {href} class='link link-hover'>{text}</a>
-					{:else}
-						<div class='link link-hover'>{text}</div>
-					{/if}
-				{/each}
-			</nav>
-		{/each}
+<div class='bg-neutral text-neutral-content'>
+	<div class="footer footer-horizontal p-6 md:p-10">
+		<div>
+			<h6 class='footer-title'>The Hill</h6>
+			<div class='link link-hover'>
+				1990 Hill Ave
+				<br>
+				Columbus, OH, 12345
+			</div>
+		</div>
+		<nav>
+			<h6 class='footer-title'>Contact Us</h6>
+			<div>Phone: 555.123.4567</div>
+			<a href='mailto:church@the.hill' class='link link-hover'>
+				church@the.hill
+			</a>
+		</nav>
+		<nav>
+			<h6 class='footer-title'>Socials</h6>
+			<div class='flex gap-4'>
+				<a href='/' class=''>
+					<Facebook class='size-8 fill-neutral-content hover:fill-neutral-content/80'/>
+				</a>
+				<a href='/' class=''>
+					<Instagram class='size-8 fill-neutral-content hover:fill-neutral-content/80'/>
+				</a>
+			</div>
+		</nav>
 	</div>
-	<aside class='text-[9pt] flex flex-col px-14 py-8'>
-		<div>&copy; 2025, The Hill, All Rights Reserved.</div>
-		<div>Website by Daniel Becher.</div>
+	<aside class="footer sm:footer-horizontal not-md:-mt-2 p-6 md:p-10">
+		&copy; 2025, The Hill, All Rights Reserved.<br>
+		Website by Ministry Brands.
 	</aside>
+</div>
 {/snippet}
 
 <!-- CONTENT -->
