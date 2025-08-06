@@ -34,9 +34,6 @@
         <div class='text-xl md:text-2xl lg:text-4xl font-semibold py-8 tracking-tight'>
             We are <span class='text-primary'>The Hill.</span>
         </div>
-        <div class=''>
-            <a href='#info' {onclick} class='btn btn-primary btn-outline not-md:btn-sm lg:btn-lg rounded-sm'>Welcome Home</a>
-        </div>
     </div>
 {/snippet}
 
@@ -60,7 +57,6 @@
                 He said, <span class='uppercase'>"come as you are,"</span> so no matter your history or walk, we would love for you to encounter this love.
             </div>
             <div class='mx-auto px-12 flex justify-center gap-12'>
-                <a href='#info' {onclick} class='col-start-3 btn btn-base-100 btn-outline btn-sm md:btn-md lg:btn-lg rounded-sm font-bold text-xl'>Learn More</a>
                 <a href='/' class='col-start-3 btn btn-base-100 btn-outline btn-sm md:btn-md lg:btn-lg rounded-sm font-bold text-xl'>Give Today</a>
             </div>
         </div>
