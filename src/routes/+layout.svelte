@@ -94,7 +94,7 @@
 	</div>
 
 	<div class='mx-auto'>
-		<a href='/' class='btn btn-ghost btn-lg px-4 py-1 hover:text-primary whitespace-nowrap'>Give</a>
+		<a href='/' class='btn btn-primary btn-md md:btn-lg whitespace-nowrap rounded-sm'>Give</a>
 		<button class='hidden btn btn-ghost btn-lg hover:text-primary' onclick={toggleShow}>
 			Menu <Icon src={Bars3} class='size-6 lg:size-8 ml-1'/>
 		</button>
@@ -106,7 +106,7 @@
 
 {#snippet footer()}
 <div class='bg-neutral text-neutral-content'>
-	<div class="footer footer-horizontal p-6 md:p-10">
+	<div class="footer sm:footer-horizontal p-4 sm:p-6 md:p-10 not-sm:gap-6">
 		<div>
 			<h6 class='footer-title'>The Hill</h6>
 			<div class='link link-hover'>
@@ -118,9 +118,9 @@
 		<nav>
 			<h6 class='footer-title'>Contact Us</h6>
 			<div>Phone: 555.123.4567</div>
-			<a href='mailto:church@the.hill' class='link link-hover'>
-				church@the.hill
-			</a>
+			<div>
+				Email: <a href='mailto:church@the.hill' class='link link-hover'>church@the.hill</a>
+			</div>
 		</nav>
 		<nav>
 			<h6 class='footer-title'>Socials</h6>
@@ -134,7 +134,7 @@
 			</div>
 		</nav>
 	</div>
-	<aside class="footer sm:footer-horizontal not-md:-mt-2 p-6 md:p-10">
+	<aside class="footer sm:footer-horizontal not-md:-mt-2 p-6 md:p-10 text-[8pt]">
 		&copy; 2025, The Hill, All Rights Reserved.<br>
 		Website by Ministry Brands.
 	</aside>
